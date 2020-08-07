@@ -10,6 +10,10 @@ import Counter from "./Counter";
 import Count from "./Count";
 import Button from "./Button";
 import Accordion from "./Accordion";
+import FackeLoading from "./FakeLoading";
+import Notification from "./Notification";
+import StopWatch from "./StopWatch";
+import Resizer from "./Resizer";
 
 function App() {
   return (
@@ -29,12 +33,21 @@ function App() {
         {/* </a> */}
         {/* <Input /> */}
         {/* <Paragraph /> */}
-        <Accordion />
-
-        <Avatar />
-        <Greeting name="Petia" />
-        <AgeDetector age={560} />
-        <Counter step={3} initialCount={1000} />
+        {/* <Accordion expanded={false}> */}
+        {/* <div>Hidden text</div> */}
+        {/* </Accordion> */}
+        {/* <Avatar /> */}
+        {/* <Greeting name="Petia" /> */}
+        {/* <AgeDetector age={560} /> */}
+        {/* <Counter step={3} initialCount={1000} /> */}
+        <h2>Facke Loading</h2>
+        <FackeLoading delay={3000} message="sucсsesы" />
+        <h2>Notification</h2>
+        <Notification delay={3000}></Notification>
+        <h2>StopWatch</h2>
+        <StopWatch />
+        <h2>Resizer</h2>
+        <Resizer ratio={0.15} />
       </header>
     </div>
   );
