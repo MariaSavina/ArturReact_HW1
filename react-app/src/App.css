@@ -12,6 +12,22 @@
   border: grey solid 3px;
 }
 
+.avatarPic {
+  width: 150px;
+}
+.usersBox {
+  list-style-type: none;
+  background-color: aqua;
+  border-radius: 3%;
+  padding: 5px;
+  margin: 5px;
+}
+.usersBoxContent {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: ; */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
