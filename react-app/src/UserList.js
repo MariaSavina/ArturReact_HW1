@@ -16,7 +16,7 @@ class Users extends React.Component {
       <div>
         <ul>
           {this.props.userslist.map((item, index) => (
-            <li key={index}>
+            <li key={item.id} className="usersBox">
               <div
               // onClick={this.letColored}
               // style={{
@@ -36,7 +36,7 @@ class Users extends React.Component {
 
 class UserList extends React.Component {
   state = {
-    // validId: this.props.initialUsers.length,
+    validId: this.props.initialUsers.length + 1,
     validName: "",
     count: 0,
   };
@@ -50,9 +50,9 @@ class UserList extends React.Component {
   };
 
   addNewUserToBottom = () => {
-    // this.setState({
-    //   validId: this.state.validId + 1,
-    // });
+    this.setState({
+      validId: this.state.validId + 1,
+    });
     this.setState((state) => ({
       count: state.count + 1,
     }));
@@ -63,9 +63,9 @@ class UserList extends React.Component {
   };
 
   addNewUserToTop = () => {
-    // this.setState({
-    //   validId: this.state.validId + 1,
-    // });
+    this.setState({
+      validId: this.state.validId + 1,
+    });
     this.setState((state) => ({
       count: state.count + 1,
     }));
