@@ -19,7 +19,10 @@ import GithubUsers from "./GithubUsers";
 import RandomAdvice from "./RandomAdvice";
 import ParentRandom from "./PrentRandom";
 import SearchingAdvice from "./SearchingAdvice";
-// import Form from "./Form";
+import Form from "./Form";
+import ToDo from "./ToDo";
+import DeckofCards from "./DeckofCards";
+import ShuffleTheCards from "./ShuffleTheCards";
 
 const users = [
   {
@@ -40,10 +43,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <p> */}
-        {/* Edit <code>src/App.js</code> and save to reload. */}
-        {/* </p> */}
         {/* <a */}
         {/* className="App-link" */}
         {/* href="https://reactjs.org" */}
@@ -69,15 +68,21 @@ function App() {
         {/* <StopWatch /> */}
         {/* <h2>Resizer</h2> */}
         {/* <Resizer ratio={0.15} /> */}
+        {/* <h2>UserList</h2> */}
+        {/* <UserList initialUsers={users} /> */}
+        {/* <h2>RandomAdvice</h2> */}
+        {/* <ParentRandom /> */}
+        {/* <h2>GithubUsers</h2> */}
+        {/* <GithubUsers /> */}
+        {/* <h2>Searching advice</h2> */}
+        {/* <SearchingAdvice /> */}
         {/* <Form /> */}
-        <h2>UserList</h2>
-        <UserList initialUsers={users} />
-        <h2>RandomAdvice</h2>
-        <ParentRandom />
-        <h2>GithubUsers</h2>
-        <GithubUsers />
-        <h2>Searching advice</h2>
-        <SearchingAdvice />
+        <h3>ToDo</h3>
+        <ToDo />
+        <h3>DeckofCards</h3>
+        <DeckofCards />
+        <h3>Shuffle The Cards</h3>
+        {/* <ShuffleTheCards /> */}
       </header>
     </div>
   );
